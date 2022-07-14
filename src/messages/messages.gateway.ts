@@ -7,7 +7,6 @@ import { SocketAddress } from 'net';
 
 @WebSocketGateway({
   cors : { origin : '*'},
-  namespace : 'chat'
 })
 export class MessagesGateway implements OnGatewayConnection {
   @WebSocketServer()
