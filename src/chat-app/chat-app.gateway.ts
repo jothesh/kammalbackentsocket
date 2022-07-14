@@ -63,7 +63,7 @@ export class ChatAppGateway implements OnGatewayConnection,OnGatewayDisconnect{
     console.log(msg,"from the new front");
     // const room = this.getRoom(client);
     
-  client.broadcast.emit('message',msg);
+  client.broadcast.emit('message',msg); 
   
   }
   /// handle user disconnection
